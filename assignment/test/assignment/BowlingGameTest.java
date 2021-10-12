@@ -34,7 +34,6 @@ public class BowlingGameTest {
 		assertEquals(20,g.score());
 	}
 	
-	@Ignore("Until we walk frame by frame")
 	
 	@Test
 	public void testOneSpare() {
