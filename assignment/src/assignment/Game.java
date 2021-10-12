@@ -1,13 +1,14 @@
 package assignment;
 
 public class Game {
-
+	int score=0;
+	
 	public void roll(int pins) {
-		// TODO Auto-generated method stub		
+		score+=pins;	
 	}
 
-	public Integer score() {
-		return 0;
+	public int score() {
+		return score;
 	}
 
 }
