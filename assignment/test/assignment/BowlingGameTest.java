@@ -4,6 +4,7 @@ import static org.junit.Assert.*;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 import org.junit.Before;
+import org.junit.Ignore;
 import org.junit.Test;
 
 public class BowlingGameTest {
@@ -31,6 +32,17 @@ public class BowlingGameTest {
 	public void testAllOnes() {
 		rollMany(20, 1);
 		assertEquals(20,g.score());
+	}
+	
+	@Ignore("Until we get design right")
+	
+	@Test
+	public void testOneSpare() {
+		g.roll(5);
+		g.roll(5);
+		g.roll(3);
+		rollMany(17, 0);
+		assertEquals(16,g.score());
 	}	
 
 }
